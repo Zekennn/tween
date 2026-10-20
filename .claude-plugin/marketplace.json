@@ -1,0 +1,18 @@
+{
+  "name": "tween",
+  "owner": {
+    "name": "Senura Perera",
+    "url": "https://github.com/Zekennn"
+  },
+  "metadata": {
+    "description": "Motion graphics plugin for Claude Code, built on Remotion."
+  },
+  "plugins": [
+    {
+      "name": "tween",
+      "source": "./",
+      "description": "Motion graphics with Remotion: titles, lower thirds, kinetic type, stat counters and promo videos.",
+      "version": "1.0.0"
+    }
+  ]
+}
