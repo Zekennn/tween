@@ -1,7 +1,7 @@
 {
   "name": "tween",
   "description": "Motion graphics for Claude Code with Remotion: titles, lower thirds, kinetic type, stat counters and full promo videos, written as frame-accurate React and rendered to MP4.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": {
     "name": "Senura Perera",
     "url": "https://github.com/Zekennn"
@@ -16,6 +16,9 @@
     "animation",
     "react",
     "apple-style",
-    "keynote"
+    "keynote",
+    "showreel",
+    "kinetic-typography",
+    "captions"
   ]
 }

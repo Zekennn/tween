@@ -1,6 +1,6 @@
 ---
 name: tween
-description: Use when the user wants motion graphics, an animated video, intro, outro, title card, lower third, kinetic typography, animated stats or chart, logo reveal, social clip or promo video, Apple-style or keynote-style product reveal, or is working in a Remotion project (files importing from "remotion", a Root.tsx with <Composition>).
+description: Use when the user wants motion graphics, an animated video, intro, outro, title card, lower third, kinetic typography, animated stats or chart, logo reveal, social clip or promo video, Apple-style or keynote-style product reveal, editorial showreel or Swiss kinetic type, warm sketch-to-motion product film, word-by-word creator captions or split-screen tutorial, or is working in a Remotion project (files importing from "remotion", a Root.tsx with <Composition>).
 ---
 
 # Tween: motion graphics with Remotion
@@ -139,12 +139,24 @@ Read the reference that matches the job, only when needed:
 - `references/apple-style.md`: Apple keynote / premium product-film look: blur-in
   entrances, long expo-out easing, slow push-in, gradient text, product rise, bento grids.
   Read it whenever the brief says "Apple style", "keynote", "premium", "clean minimal launch".
+- `references/editorial-showreel.md`: Swiss / designer-reel look: heavy capitals rising out of
+  masks with real motion blur, slot-machine digits, hairline rows, repeated type stacks, mono
+  HUD labels, hard cuts. Read it for "showreel", "editorial", "Swiss", "bold typographic".
+- `references/warm-studio.md`: warm sketch-to-motion product film: paper cards in warm dark
+  light, self-drawing sketches, a glowing orb on a path, starburst glow, italic serif taglines.
+  Read it for "warm", "crafted", "sketch to final", "before and after", "AI product demo".
+- `references/creator-captions.md`: talking-head / tutorial look: one caption word at a time
+  from a transcript, split-screen before/after, red title banner. Read it for "captions",
+  "TikTok/Reels style", "talking head", "tutorial", "split screen".
 - `references/rendering.md`: render commands, codecs, quality, transparent video,
   stills/thumbnails, GIFs, rendering on Windows, common errors.
 - `templates/`: ready components you can copy into `src/` and adapt:
   `TitleReveal.tsx`, `LowerThird.tsx`, `StatCounter.tsx`, `KineticText.tsx`,
-  `LogoReveal.tsx`, `BarChart.tsx`, and the Apple-style set `AppleHeadline.tsx`,
-  `AppleProductReveal.tsx`, `AppleBento.tsx`. Each is self-contained and prop-driven. Prefer
+  `LogoReveal.tsx`, `BarChart.tsx`, the Apple-style set `AppleHeadline.tsx`,
+  `AppleProductReveal.tsx`, `AppleBento.tsx`, the editorial set `EditorialTitle.tsx`,
+  `EditorialStats.tsx`, `TypeStack.tsx`, the warm studio set `WarmPathDemo.tsx`,
+  `WarmGlowTagline.tsx`, and the creator set `WordCaptions.tsx`, `SplitCompare.tsx`.
+  Each is self-contained and prop-driven. Prefer
   adapting a template over writing from scratch when one fits.
 
 ## Self-check before you finish

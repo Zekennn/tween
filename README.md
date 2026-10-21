@@ -33,7 +33,7 @@ the first time you render.
 | Command | What it does |
 |---|---|
 | `/tween-new [name] [brief]` | Create a new Remotion project, ready to preview |
-| `/tween-template <type> [details]` | Drop in a ready template: `title`, `lowerthird`, `stats`, `kinetic`, `logo`, `chart`, `apple-headline`, `apple-product`, `apple-bento` |
+| `/tween-template <type> [details]` | Drop in a ready template: `title`, `lowerthird`, `stats`, `kinetic`, `logo`, `chart`, `apple-headline`, `apple-product`, `apple-bento`, `editorial-title`, `editorial-stats`, `type-stack`, `warm-path`, `warm-tagline`, `captions`, `split-compare` |
 | `/tween-scene <brief>` | Design and build a custom scene or full video from a description |
 | `/tween-render [id] [mp4\|gif\|still\|transparent\|4k]` | Export the video |
 
@@ -47,7 +47,7 @@ automatically whenever you're working on motion graphics or inside a Remotion pr
   fonts and assets. No flicker, no desync.
 - **Motion design built in.** Easing, staggering, overlap, readable hold times, safe areas
   and type scale, so results look designed, not generated.
-- **Nine tested templates** (including an Apple keynote-style set) that scale to 16:9, 9:16 and 1:1 automatically.
+- **Sixteen tested templates** (including Apple keynote, editorial showreel, warm studio and creator caption sets) that scale to 16:9, 9:16 and 1:1 automatically.
 - **A reviewer agent** (`tween-reviewer`) that checks scenes for render bugs and weak motion.
 
 ## Templates
@@ -79,6 +79,42 @@ gradient text, no bounce. Just ask for "Apple style" or use the templates direct
 *Style inspired by product keynotes. Not affiliated with Apple; don't use Apple's logos,
 product names or the SF Pro font in your videos.*
 
+### Editorial showreel set
+
+Swiss designer-reel look: heavy capitals snapping out of masks with real motion blur,
+slot-machine numbers, hairline rules, mono labels, one hot accent, hard cuts.
+
+| Template | Use |
+|---|---|
+| EditorialTitle | Capitals rise word by word, accent full stop drops in, mono subtitle types on |
+| EditorialStats | Big numbers on hairline rows, digits roll in, labels type on |
+| TypeStack | One word repeated in solid/outline rows drifting past, accent band, corner HUD |
+
+### Warm studio set
+
+Sketch-to-motion product film: paper cards in warm dark light, soft pops, glow, italic serif.
+
+| Template | Use |
+|---|---|
+| WarmPathDemo | A rough sketch draws itself; a glowing orb smooths the same path on a grid panel |
+| WarmGlowTagline | Glowing starburst, dashed lines to floating cards, letter-by-letter serif tagline |
+
+### Creator set
+
+Talking-head tutorial look for your own footage.
+
+| Template | Use |
+|---|---|
+| WordCaptions | One caption word at a time, timed from a transcript (`@remotion/captions` format) |
+| SplitCompare | Before/after clips with labels, red title banner, presenter in the other half |
+
+```
+/tween-template editorial-title "Studio Nova. Motion design, showreel 2026" vertical
+```
+```
+/tween-template captions "talk.mp4, use my transcript captions.json"
+```
+
 ## Quick start
 
 ```
@@ -96,8 +132,8 @@ tween/
 │   └── marketplace.json
 ├── skills/tween/
 │   ├── SKILL.md              # core rules, workflow, design principles
-│   ├── references/           # animation patterns, Apple style, layouts, audio, rendering
-│   └── templates/            # 9 ready Remotion components
+│   ├── references/           # animation patterns, styles (Apple, editorial, warm, creator), layouts, audio, rendering
+│   └── templates/            # 16 ready Remotion components
 ├── commands/                 # /tween-new, /tween-template, /tween-scene, /tween-render
 └── agents/tween-reviewer.md
 ```
