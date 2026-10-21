@@ -33,7 +33,7 @@ the first time you render.
 | Command | What it does |
 |---|---|
 | `/tween-new [name] [brief]` | Create a new Remotion project, ready to preview |
-| `/tween-template <type> [details]` | Drop in a ready template: `title`, `lowerthird`, `stats`, `kinetic`, `logo`, `chart` |
+| `/tween-template <type> [details]` | Drop in a ready template: `title`, `lowerthird`, `stats`, `kinetic`, `logo`, `chart`, `apple-headline`, `apple-product`, `apple-bento` |
 | `/tween-scene <brief>` | Design and build a custom scene or full video from a description |
 | `/tween-render [id] [mp4\|gif\|still\|transparent\|4k]` | Export the video |
 
@@ -47,7 +47,7 @@ automatically whenever you're working on motion graphics or inside a Remotion pr
   fonts and assets. No flicker, no desync.
 - **Motion design built in.** Easing, staggering, overlap, readable hold times, safe areas
   and type scale, so results look designed, not generated.
-- **Six tested templates** that scale to 16:9, 9:16 and 1:1 automatically.
+- **Nine tested templates** (including an Apple keynote-style set) that scale to 16:9, 9:16 and 1:1 automatically.
 - **A reviewer agent** (`tween-reviewer`) that checks scenes for render bugs and weak motion.
 
 ## Templates
@@ -60,6 +60,24 @@ automatically whenever you're working on motion graphics or inside a Remotion pr
 | KineticText | Punchy social typography, one line per beat |
 | LogoReveal | Particles converge, ring draws, logo springs in |
 | BarChart | Bars grow staggered with counting values |
+
+### Apple-style set
+
+Calm, premium keynote look: blur-in entrances on long expo-out easing, slow camera push,
+gradient text, no bounce. Just ask for "Apple style" or use the templates directly.
+
+| Template | Use |
+|---|---|
+| AppleHeadline | Eyebrow plus 1-3 big lines blurring in, one in sweeping gradient |
+| AppleProductReveal | Product rises from below with perspective and a light sweep; name and tagline above |
+| AppleBento | Rounded "by the numbers" tiles that blur in and count up |
+
+```
+/tween-template apple-product "Nova One, Power that fits in your pocket, image phone.png"
+```
+
+*Style inspired by product keynotes. Not affiliated with Apple; don't use Apple's logos,
+product names or the SF Pro font in your videos.*
 
 ## Quick start
 
@@ -78,8 +96,8 @@ tween/
 │   └── marketplace.json
 ├── skills/tween/
 │   ├── SKILL.md              # core rules, workflow, design principles
-│   ├── references/           # animation patterns, layouts, audio, rendering
-│   └── templates/            # 6 ready Remotion components
+│   ├── references/           # animation patterns, Apple style, layouts, audio, rendering
+│   └── templates/            # 9 ready Remotion components
 ├── commands/                 # /tween-new, /tween-template, /tween-scene, /tween-render
 └── agents/tween-reviewer.md
 ```

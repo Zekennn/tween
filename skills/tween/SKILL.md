@@ -1,6 +1,6 @@
 ---
 name: tween
-description: Use when the user wants motion graphics, an animated video, intro, outro, title card, lower third, kinetic typography, animated stats or chart, logo reveal, social clip or promo video, or is working in a Remotion project (files importing from "remotion", a Root.tsx with <Composition>).
+description: Use when the user wants motion graphics, an animated video, intro, outro, title card, lower third, kinetic typography, animated stats or chart, logo reveal, social clip or promo video, Apple-style or keynote-style product reveal, or is working in a Remotion project (files importing from "remotion", a Root.tsx with <Composition>).
 ---
 
 # Tween: motion graphics with Remotion
@@ -136,11 +136,15 @@ Read the reference that matches the job, only when needed:
   for multiple formats from one component, type scale.
 - `references/audio-and-captions.md`: background music, fading audio, syncing beats
   to frames, captions.
+- `references/apple-style.md`: Apple keynote / premium product-film look: blur-in
+  entrances, long expo-out easing, slow push-in, gradient text, product rise, bento grids.
+  Read it whenever the brief says "Apple style", "keynote", "premium", "clean minimal launch".
 - `references/rendering.md`: render commands, codecs, quality, transparent video,
   stills/thumbnails, GIFs, rendering on Windows, common errors.
 - `templates/`: ready components you can copy into `src/` and adapt:
   `TitleReveal.tsx`, `LowerThird.tsx`, `StatCounter.tsx`, `KineticText.tsx`,
-  `LogoReveal.tsx`, `BarChart.tsx`. Each is self-contained and prop-driven. Prefer
+  `LogoReveal.tsx`, `BarChart.tsx`, and the Apple-style set `AppleHeadline.tsx`,
+  `AppleProductReveal.tsx`, `AppleBento.tsx`. Each is self-contained and prop-driven. Prefer
   adapting a template over writing from scratch when one fits.
 
 ## Self-check before you finish
